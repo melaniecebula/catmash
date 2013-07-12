@@ -12,8 +12,6 @@
 		330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */; };
 		330FD8D2178FBEE5009BD963 /* LGMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F486178FB40900DE10A8 /* LGMainMenuViewController.m */; };
 		330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */; };
-		8092C08D178FC369002DB2CD /* LGCatBattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8092C08B178FC369002DB2CD /* LGCatBattleViewController.m */; };
-		8092C08E178FC369002DB2CD /* LGCatBattleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8092C08C178FC369002DB2CD /* LGCatBattleViewController.xib */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -28,6 +26,8 @@
 		8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */; };
 		8371F489178FB40900DE10A8 /* LGMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371F487178FB40900DE10A8 /* LGMainMenuViewController.xib */; };
 		8371F48A178FB62800DE10A8 /* LGCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A5C72178FAD6000C83E0B /* LGCat.m */; };
+		8371F48E178FC4BC00DE10A8 /* LGBattleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F48C178FC4BC00DE10A8 /* LGBattleViewViewController.m */; };
+		8371F48F178FC4BC00DE10A8 /* LGBattleViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371F48D178FC4BC00DE10A8 /* LGBattleViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +38,6 @@
 		330FD8CD178FBDB9009BD963 /* LGProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGProfileViewController.h; sourceTree = "<group>"; };
 		330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGProfileViewController.m; sourceTree = "<group>"; };
 		330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGProfileViewController.xib; sourceTree = "<group>"; };
-		8092C08A178FC369002DB2CD /* LGCatBattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGCatBattleViewController.h; path = Catmash/LGCatBattleViewController.h; sourceTree = "<group>"; };
-		8092C08B178FC369002DB2CD /* LGCatBattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGCatBattleViewController.m; path = Catmash/LGCatBattleViewController.m; sourceTree = "<group>"; };
-		8092C08C178FC369002DB2CD /* LGCatBattleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LGCatBattleViewController.xib; path = Catmash/LGCatBattleViewController.xib; sourceTree = "<group>"; };
 		8371F45B178FABF900DE10A8 /* Catmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8371F45E178FABF900DE10A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8371F460178FABF900DE10A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +59,9 @@
 		8371F485178FB40900DE10A8 /* LGMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMainMenuViewController.h; sourceTree = "<group>"; };
 		8371F486178FB40900DE10A8 /* LGMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMainMenuViewController.m; sourceTree = "<group>"; };
 		8371F487178FB40900DE10A8 /* LGMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGMainMenuViewController.xib; sourceTree = "<group>"; };
+		8371F48B178FC4BC00DE10A8 /* LGBattleViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBattleViewViewController.h; sourceTree = "<group>"; };
+		8371F48C178FC4BC00DE10A8 /* LGBattleViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBattleViewViewController.m; sourceTree = "<group>"; };
+		8371F48D178FC4BC00DE10A8 /* LGBattleViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGBattleViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +119,9 @@
 				8371F480178FAD7200DE10A8 /* LGWallOfFameViewController.h */,
 				8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */,
 				8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */,
+				8371F48B178FC4BC00DE10A8 /* LGBattleViewViewController.h */,
+				8371F48C178FC4BC00DE10A8 /* LGBattleViewViewController.m */,
+				8371F48D178FC4BC00DE10A8 /* LGBattleViewViewController.xib */,
 				8371F467178FABF900DE10A8 /* Supporting Files */,
 				1B6A5C71178FAD6000C83E0B /* LGCat.h */,
 				1B6A5C72178FAD6000C83E0B /* LGCat.m */,
@@ -127,9 +130,6 @@
 				330FD8CD178FBDB9009BD963 /* LGProfileViewController.h */,
 				330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */,
 				330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */,
-				8092C08A178FC369002DB2CD /* LGCatBattleViewController.h */,
-				8092C08B178FC369002DB2CD /* LGCatBattleViewController.m */,
-				8092C08C178FC369002DB2CD /* LGCatBattleViewController.xib */,
 			);
 			path = Catmash;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */,
 				8371F489178FB40900DE10A8 /* LGMainMenuViewController.xib in Resources */,
 				330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */,
-				8092C08E178FC369002DB2CD /* LGCatBattleViewController.xib in Resources */,
+				8371F48F178FC4BC00DE10A8 /* LGBattleViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +226,7 @@
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
 				1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */,
 				330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */,
-				8092C08D178FC369002DB2CD /* LGCatBattleViewController.m in Sources */,
+				8371F48E178FC4BC00DE10A8 /* LGBattleViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

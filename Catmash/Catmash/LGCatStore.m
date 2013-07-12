@@ -8,6 +8,7 @@
 
 #import "LGCatStore.h"
 #import <Parse/Parse.h>
+#import "UIImage+Resizing.h"
 
 @interface LGCatStore()
 {
@@ -61,6 +62,9 @@
 	[onlineCat setObject:cat.catName forKey:@"name"];
 	
 	NSData *imageData = UIImagePNGRepresentation(cat.catImage);
+	if (imageData.length > 10000000) {
+		imageData = UIImagePNGRepresentation([cat.catImage imageScaledToSize:CGSizeMake(cat.catImage.size.width / 2.0, cat.catImage.size.height / 2.0)]);
+	}
 	PFFile *imageFile = [PFFile fileWithData:imageData];
 	[imageFile save];
 	[onlineCat setObject:imageFile forKey:@"image"];

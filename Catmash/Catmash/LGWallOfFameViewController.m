@@ -19,6 +19,11 @@
 
 @implementation LGWallOfFameViewController
 
+- (id)init
+{
+    return [self initWithNibName:nil bundle:nil];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,6 +35,7 @@
 		for (int i = 0; i < 5; i++) {
 			LGCat *newCat = [LGCat new];
 			newCat.catName = [NSString stringWithFormat:@"Cat %d", i];
+			[_cats addObject:newCat];
 		}
 		
     }
@@ -43,6 +49,7 @@
 	
 	[_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kLGWallOfFameCellIdentifier];
 	_tableView.delegate = self;
+	_tableView.dataSource = self;
 	
 }
 
@@ -56,7 +63,7 @@
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 0;
+	return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

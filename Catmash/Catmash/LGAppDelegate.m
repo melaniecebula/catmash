@@ -7,6 +7,7 @@
 //
 
 #import "LGAppDelegate.h"
+#import "LGMainMenuViewController.h"
 
 @implementation LGAppDelegate
 
@@ -18,6 +19,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+	
+	
+	LGMainMenuViewController *mainMenuVC = [[LGMainMenuViewController alloc] init];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuVC];
+	self.window.rootViewController = navigationController;
+	
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -14,6 +14,8 @@
 		330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */; };
 		330FD8D7178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8D5178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg */; };
 		330FD8D9178FEE5A009BD963 /* 16706328-two-black-cats-playing-with-skein-of-wool-over-white-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8D8178FEE5A009BD963 /* 16706328-two-black-cats-playing-with-skein-of-wool-over-white-background.jpg */; };
+		330FD8DD178FF84A009BD963 /* LGCatNewBattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FD8DB178FF82C009BD963 /* LGCatNewBattleViewController.m */; };
+		330FD8DE178FF855009BD963 /* LGCatNewBattleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8DC178FF82C009BD963 /* LGCatNewBattleViewController.xib */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -50,6 +52,9 @@
 		330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGProfileViewController.xib; sourceTree = "<group>"; };
 		330FD8D5178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = n2okjor1jda07nespqvtn0d8811373612758.jpg; sourceTree = "<group>"; };
 		330FD8D8178FEE5A009BD963 /* 16706328-two-black-cats-playing-with-skein-of-wool-over-white-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "16706328-two-black-cats-playing-with-skein-of-wool-over-white-background.jpg"; sourceTree = "<group>"; };
+		330FD8DA178FF82C009BD963 /* LGCatNewBattleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGCatNewBattleViewController.h; sourceTree = "<group>"; };
+		330FD8DB178FF82C009BD963 /* LGCatNewBattleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGCatNewBattleViewController.m; sourceTree = "<group>"; };
+		330FD8DC178FF82C009BD963 /* LGCatNewBattleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LGCatNewBattleViewController.xib; sourceTree = "<group>"; };
 		8371F45B178FABF900DE10A8 /* Catmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8371F45E178FABF900DE10A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8371F460178FABF900DE10A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,9 +165,9 @@
 				8371F480178FAD7200DE10A8 /* LGWallOfFameViewController.h */,
 				8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */,
 				8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */,
-				8066F235178FED0B00D7F6B4 /* LGCatNewBattleViewController.h */,
-				8066F233178FECFE00D7F6B4 /* LGCatNewBattleViewController.m */,
-				8066F231178FECE600D7F6B4 /* LGCatNewBattleViewController.xib */,
+				330FD8DA178FF82C009BD963 /* LGCatNewBattleViewController.h */,
+				330FD8DB178FF82C009BD963 /* LGCatNewBattleViewController.m */,
+				330FD8DC178FF82C009BD963 /* LGCatNewBattleViewController.xib */,
 				8371F467178FABF900DE10A8 /* Supporting Files */,
 				1B6A5C71178FAD6000C83E0B /* LGCat.h */,
 				1B6A5C72178FAD6000C83E0B /* LGCat.m */,
@@ -241,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330FD8DE178FF855009BD963 /* LGCatNewBattleViewController.xib in Resources */,
 				8371F46B178FABF900DE10A8 /* InfoPlist.strings in Resources */,
 				8371F473178FABF900DE10A8 /* Default.png in Resources */,
 				8371F475178FABF900DE10A8 /* Default@2x.png in Resources */,
@@ -260,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330FD8DD178FF84A009BD963 /* LGCatNewBattleViewController.m in Sources */,
 				330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */,
 				330FD8D2178FBEE5009BD963 /* LGMainMenuViewController.m in Sources */,
 				8371F48A178FB62800DE10A8 /* LGCat.m in Sources */,

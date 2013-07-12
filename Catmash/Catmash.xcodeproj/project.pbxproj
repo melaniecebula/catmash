@@ -18,6 +18,8 @@
 		8371F475178FABF900DE10A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8371F474178FABF900DE10A8 /* Default@2x.png */; };
 		8371F477178FABF900DE10A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8371F476178FABF900DE10A8 /* Default-568h@2x.png */; };
 		8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8371F478178FABF900DE10A8 /* Catmash.xcdatamodeld */; };
+		8371F483178FAD7200DE10A8 /* LGWallOfFameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */; };
+		8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		8371F474178FABF900DE10A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8371F476178FABF900DE10A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8371F479178FABF900DE10A8 /* Catmash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catmash.xcdatamodel; sourceTree = "<group>"; };
+		8371F480178FAD7200DE10A8 /* LGWallOfFameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGWallOfFameViewController.h; sourceTree = "<group>"; };
+		8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGWallOfFameViewController.m; sourceTree = "<group>"; };
+		8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGWallOfFameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,9 @@
 				8371F46F178FABF900DE10A8 /* LGAppDelegate.h */,
 				8371F470178FABF900DE10A8 /* LGAppDelegate.m */,
 				8371F478178FABF900DE10A8 /* Catmash.xcdatamodeld */,
+				8371F480178FAD7200DE10A8 /* LGWallOfFameViewController.h */,
+				8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */,
+				8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */,
 				8371F467178FABF900DE10A8 /* Supporting Files */,
 			);
 			path = Catmash;
@@ -162,6 +170,7 @@
 				8371F473178FABF900DE10A8 /* Default.png in Resources */,
 				8371F475178FABF900DE10A8 /* Default@2x.png in Resources */,
 				8371F477178FABF900DE10A8 /* Default-568h@2x.png in Resources */,
+				8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +184,7 @@
 				8371F46D178FABF900DE10A8 /* main.m in Sources */,
 				8371F471178FABF900DE10A8 /* LGAppDelegate.m in Sources */,
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
+				8371F483178FAD7200DE10A8 /* LGWallOfFameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

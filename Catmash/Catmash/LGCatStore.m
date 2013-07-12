@@ -61,14 +61,18 @@
 	[onlineCat setObject:cat.catName forKey:@"name"];
 	
 	NSData *imageData = UIImageJPEGRepresentation(cat.catImage, 1.0f);
+    CGFloat factor = 1.0;
 	while (imageData.length > 10000000) {
-		imageData = UIImageJPEGRepresentation(cat.catImage, 0.5f);
+        factor /= 2.0;
+		imageData = UIImageJPEGRepresentation(cat.catImage, factor);
 	}
 	
 	PFFile *imageFile = [PFFile fileWithData:imageData];
-	[imageFile save];
-	[onlineCat setObject:imageFile forKey:@"image"];
-	[onlineCat setObject:@(cat.currentScore) forKey:@"score"];
+	[imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [onlineCat setObject:imageFile forKey:@"image"];
+        [onlineCat setObject:@(cat.currentScore) forKey:@"score"];
+        [onlineCat saveInBackground];
+    } progressBlock:nil];	
 }
 
 -(NSArray *)recieveRandomLGCatPair{

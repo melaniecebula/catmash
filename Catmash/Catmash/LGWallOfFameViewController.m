@@ -7,6 +7,7 @@
 //
 
 #import "LGWallOfFameViewController.h"
+#import "LGCat.h"
 
 @interface LGWallOfFameViewController ()
 
@@ -23,6 +24,13 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+		
+		_cats = [NSMutableArray new];
+		
+		for (int i = 0; i < 5; i++) {
+			LGCat *newCat = [LGCat new];
+			newCat.catName = [NSString stringWithFormat:@"Cat %d", i];
+		}
 		
     }
     return self;
@@ -60,8 +68,10 @@
 {
 	UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:kLGWallOfFameCellIdentifier forIndexPath:indexPath];
 	
+	LGCat *cat = _cats[indexPath.row];
+	cell.textLabel.text = cat.catName;
 	
-
+	return cell;
 }
 
 @end

@@ -13,6 +13,7 @@
 - (IBAction)enterWallOfFame:(id)sender;
 
 - (IBAction)profile:(id)sender;
+- (IBAction)enterARound:(id)sender;
 
 
 @end

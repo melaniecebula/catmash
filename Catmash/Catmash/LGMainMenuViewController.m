@@ -9,6 +9,8 @@
 #import "LGMainMenuViewController.h"
 #import "LGWallOfFameViewController.h"
 #import "LGProfileViewController.h"
+#import "LGCatNewBattleViewController.h"
+#import "LGCatStore.h"
 
 @interface LGMainMenuViewController ()
 
@@ -25,7 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [LGCatStore sharedStore];
     }
     return self;
 }
@@ -52,5 +54,11 @@
     
     LGProfileViewController *profileVC = [LGProfileViewController new];
     [self.navigationController pushViewController:profileVC animated:YES];
+}
+
+- (IBAction)enterARound:(id)sender {
+ 
+    LGCatNewBattleViewController *roundVC = [LGCatNewBattleViewController new];
+        [self.navigationController pushViewController:roundVC animated:YES];
 }
 @end

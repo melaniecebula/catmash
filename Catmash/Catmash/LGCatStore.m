@@ -1,3 +1,4 @@
+
 //
 //  LGCatStore.m
 //  Catmash
@@ -40,6 +41,7 @@
 				newCat.currentScore = [[onlineCat objectForKey:@"score"] doubleValue];
 				
 				[_catStore addObject:newCat];
+                NSLog(@"Added cat: %@", newCat.catName);
 			}
 			[[NSNotificationCenter defaultCenter] postNotificationName:kLGCatStoreFinishedLoadingCatsNotification object:self];
 		}];
@@ -57,6 +59,7 @@
 }
 -(void)addToCatStore:(LGCat *)cat{
     [_catStore addObject:cat];
+    NSLog(@"Added cat: %@", cat.catName);
 	PFObject *onlineCat = [PFObject objectWithClassName:@"Cat"];
 	[onlineCat setObject:cat.catName forKey:@"name"];
 	
@@ -78,19 +81,16 @@
 -(NSArray *)recieveRandomLGCatPair{
     NSUInteger randomPos1 = arc4random()%([_catStore count]);
     NSUInteger randomPos2 = arc4random()%([_catStore count]);
-    BOOL equal = YES;
     
-    while (equal){
-        if (randomPos1 == randomPos2) {
-            randomPos2 = arc4random()%([_catStore count]);
-        } else{
-            equal = NO;
-        }
+    while (randomPos1 == randomPos2){
+        randomPos2 = arc4random()%([_catStore count]);
     }
+    
+    NSLog(@"%d / %d", randomPos1, randomPos2);
     
     NSArray *catPair = @[[_catStore objectAtIndex:randomPos1], [_catStore objectAtIndex:randomPos2]];
     
     return catPair;
+}
 
-}    
 @end

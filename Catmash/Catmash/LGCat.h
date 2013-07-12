@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface LGCat : NSObject
-@property NSInteger *currentScore;
+@property double currentScore;
 @property (nonatomic, strong) NSString *catName;
 @property (nonatomic, strong) UIImage *catImage;
 
-- (void)updateCurrentScore:(NSInteger)gainedPoints;
-- (NSInteger *)getExpectValue:(LGCat *)opponent;
+- (void)updateCurrentScore:(double)gainedPoints;
+- (double)getExpectScore:(LGCat *)opponent;
 @end

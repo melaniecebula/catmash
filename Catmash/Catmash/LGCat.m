@@ -9,11 +9,16 @@
 #import "LGCat.h"
 
 @implementation LGCat
-- (void)updateCurrentScore:(NSInteger)gainedPoints{
-    NSInteger *newScore = [self currentScore] + gainedPoints;
-    [self setCurrentScore:newScore];
+- (void)updateCurrentScore:(double)gainedPoints{
+    double newScore = self.currentScore + gainedPoints;
+    self.currentScore = newScore;
 }
-- (NSInteger *)getExpectValue:(LGCat *)opponent{
+- (double)getExpectScore:(LGCat *)opponent{
+    double truthDiff = ([opponent currentScore] - [self currentScore]) / 400;
     
+    double raised = pow(10.0, truthDiff);
+    double expectedScore = pow((1+raised), -1.0);
+    
+    return expectedScore;
 }
 @end

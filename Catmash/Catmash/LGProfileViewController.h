@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LGProfileViewController : UIViewController
+@interface LGProfileViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end

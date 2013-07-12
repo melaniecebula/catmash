@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "LGCat.h"
+
+#define kLGCatStoreFinishedLoadingCatsNotification @"LGCatStoreFinishedLoadingCatsNotification"
+
 @interface LGCatStore : NSObject
 @property (nonatomic, strong, readonly) NSArray *catStore;
 +(LGCatStore *)sharedStore;

@@ -7,6 +7,8 @@
 //
 
 #import "LGCatStore.h"
+#import <Parse/Parse.h>
+
 @interface LGCatStore()
 {
     NSMutableArray *_catStore;
@@ -21,14 +23,26 @@
     self = [super init];
     
     if(self){
-        _catStore = [[NSMutableArray alloc] init];
-        
-                
-		for (int i = 0; i < 5; i++) {
-			LGCat *newCat = [LGCat new];
-			newCat.catName = [NSString stringWithFormat:@"Cat %d", i];
-			[_catStore addObject:newCat];
-		}
+		_catStore = [[NSMutableArray alloc] init];
+
+		PFQuery *query = [PFQuery queryWithClassName:@"Cat"];
+		[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+			
+			for (PFObject *onlineCat in objects) {
+				LGCat *newCat = [LGCat new];
+				
+				newCat.catName = [onlineCat objectForKey:@"name"];
+				
+				PFFile *imageFile = [onlineCat objectForKey:@"image"];
+				NSData *imageData = [imageFile getData];
+				newCat.catImage = [UIImage imageWithData:imageData];
+				
+				newCat.currentScore = [[onlineCat objectForKey:@"score"] doubleValue];
+				
+				[_catStore addObject:newCat];
+			}
+			[[NSNotificationCenter defaultCenter] postNotificationName:kLGCatStoreFinishedLoadingCatsNotification object:self];
+		}];
     }
     
     return self;

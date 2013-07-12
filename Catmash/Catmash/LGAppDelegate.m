@@ -9,6 +9,8 @@
 #import "LGAppDelegate.h"
 #import "LGMainMenuViewController.h"
 
+#import <Parse/Parse.h>
+
 @implementation LGAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -20,6 +22,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	
+	// DB
+	
+	[Parse setApplicationId:@"s1tNBcs3niYmP0jUripuVG1Pay2ItM3zjhkr7xgv"
+				  clientKey:@"LvYOGX9pd6dGqu0jDtUjnc0E3b9hJWuUcDjQIY0m"];
+	
+	
+	
+	// View Controllers
 	
 	LGMainMenuViewController *mainMenuVC = [[LGMainMenuViewController alloc] init];
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuVC];

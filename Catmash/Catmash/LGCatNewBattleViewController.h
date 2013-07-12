@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LGCatNewBattleViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *catImageViewOne;
+@property (weak, nonatomic) IBOutlet UIButton *catImageViewTwo;
+@property (weak, nonatomic) IBOutlet UILabel *battleTopLabel;
 
 @end

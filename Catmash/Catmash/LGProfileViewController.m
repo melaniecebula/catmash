@@ -19,6 +19,7 @@
 - (IBAction)takePicture:(id)sender;
 - (IBAction)nameFieldDidEnd:(id)sender;
 - (IBAction)doneButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *placeHolderLabel;
 
 @end
 
@@ -118,6 +119,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
     // Put that image onto the screen in our image view
     [_catImage setImage:image];
+    
+    [_placeHolderLabel setHidden:YES];
     
     // Take image picker off the screen -
     // you must call this dismiss method

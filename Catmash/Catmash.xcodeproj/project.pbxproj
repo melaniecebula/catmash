@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B57F997178FB7A800DCAB7E /* LGCatStore.m */; };
 		1B6A5C73178FAD6000C83E0B /* LGCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A5C72178FAD6000C83E0B /* LGCat.m */; };
+		330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */; };
+		330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -30,6 +32,9 @@
 		1B57F997178FB7A800DCAB7E /* LGCatStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCatStore.m; sourceTree = "<group>"; };
 		1B6A5C71178FAD6000C83E0B /* LGCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCat.h; sourceTree = "<group>"; };
 		1B6A5C72178FAD6000C83E0B /* LGCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCat.m; sourceTree = "<group>"; };
+		330FD8CD178FBDB9009BD963 /* LGProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGProfileViewController.h; sourceTree = "<group>"; };
+		330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGProfileViewController.m; sourceTree = "<group>"; };
+		330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGProfileViewController.xib; sourceTree = "<group>"; };
 		8371F45B178FABF900DE10A8 /* Catmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8371F45E178FABF900DE10A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8371F460178FABF900DE10A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +118,9 @@
 				1B6A5C72178FAD6000C83E0B /* LGCat.m */,
 				1B57F996178FB7A800DCAB7E /* LGCatStore.h */,
 				1B57F997178FB7A800DCAB7E /* LGCatStore.m */,
+				330FD8CD178FBDB9009BD963 /* LGProfileViewController.h */,
+				330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */,
+				330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */,
 			);
 			path = Catmash;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 				8371F477178FABF900DE10A8 /* Default-568h@2x.png in Resources */,
 				8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */,
 				8371F489178FB40900DE10A8 /* LGMainMenuViewController.xib in Resources */,
+				330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +214,7 @@
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
 				1B6A5C73178FAD6000C83E0B /* LGCat.m in Sources */,
 				1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */,
+				330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

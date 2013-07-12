@@ -8,7 +8,7 @@
 
 #import "LGWallOfFameViewController.h"
 #import "LGCat.h"
-
+#import "LGCatStore.h"
 @interface LGWallOfFameViewController ()
 
 
@@ -29,14 +29,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-		
-		_cats = [NSMutableArray new];
-		
-		for (int i = 0; i < 5; i++) {
-			LGCat *newCat = [LGCat new];
-			newCat.catName = [NSString stringWithFormat:@"Cat %d", i];
-			[_cats addObject:newCat];
-		}
+	
+        
+        _cats = [[LGCatStore sharedStore] catStore];
 		
     }
     return self;

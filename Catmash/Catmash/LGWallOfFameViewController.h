@@ -10,7 +10,7 @@
 
 @interface LGWallOfFameViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property NSMutableArray *cats;
+@property NSArray *cats;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -22,6 +22,13 @@
     
     if(self){
         _catStore = [[NSMutableArray alloc] init];
+        
+                
+		for (int i = 0; i < 5; i++) {
+			LGCat *newCat = [LGCat new];
+			newCat.catName = [NSString stringWithFormat:@"Cat %d", i];
+			[_catStore addObject:newCat];
+		}
     }
     
     return self;

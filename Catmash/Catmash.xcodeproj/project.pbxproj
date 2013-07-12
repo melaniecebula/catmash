@@ -59,9 +59,6 @@
 		8371F452178FABF800DE10A8 = {
 			isa = PBXGroup;
 			children = (
-				8092C07C178FAFBF002DB2CD /* LGCatBattleViewController.h */,
-				8092C07D178FAFBF002DB2CD /* LGCatBattleViewController.m */,
-				8092C07E178FAFBF002DB2CD /* LGCatBattleViewController.xib */,
 				8371F466178FABF900DE10A8 /* Catmash */,
 				8371F45D178FABF900DE10A8 /* Frameworks */,
 				8371F45C178FABF900DE10A8 /* Products */,
@@ -103,8 +100,6 @@
 		8371F467178FABF900DE10A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8092C078178FAE4A002DB2CD /* kitten 1.jpg */,
-				8092C076178FAE40002DB2CD /* kitten 2.jpg */,
 				8371F468178FABF900DE10A8 /* Catmash-Info.plist */,
 				8371F469178FABF900DE10A8 /* InfoPlist.strings */,
 				8371F46C178FABF900DE10A8 /* main.m */,
@@ -172,9 +167,6 @@
 				8371F473178FABF900DE10A8 /* Default.png in Resources */,
 				8371F475178FABF900DE10A8 /* Default@2x.png in Resources */,
 				8371F477178FABF900DE10A8 /* Default-568h@2x.png in Resources */,
-				8092C077178FAE40002DB2CD /* kitten 2.jpg in Resources */,
-				8092C079178FAE4A002DB2CD /* kitten 1.jpg in Resources */,
-				8092C080178FAFBF002DB2CD /* LGCatBattleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

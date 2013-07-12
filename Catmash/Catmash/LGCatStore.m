@@ -57,7 +57,16 @@
 }
 -(void)addToCatStore:(LGCat *)cat{
     [_catStore addObject:cat];
+	PFObject *onlineCat = [PFObject objectWithClassName:@"Cat"];
+	[onlineCat setObject:cat.catName forKey:@"name"];
+	
+	NSData *imageData = UIImagePNGRepresentation(cat.catImage);
+	PFFile *imageFile = [PFFile fileWithData:imageData];
+	[imageFile save];
+	[onlineCat setObject:imageFile forKey:@"image"];
+	[onlineCat setObject:@(cat.currentScore) forKey:@"score"];
 }
+
 -(NSArray *)recieveRandomLGCatPair{
     NSUInteger randomPos1 = arc4random()%([_catStore count]);
     NSUInteger randomPos2 = arc4random()%([_catStore count]);

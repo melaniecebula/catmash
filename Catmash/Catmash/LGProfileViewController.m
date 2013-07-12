@@ -86,12 +86,7 @@
     NSString *name = _catName.text;
     UIImage *image = _catImage.image;
     
-    if ((name==nil || [name isEqualToString:@""]) && (image ==nil))
-    {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Error" message: @"Please add a name and image" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
-    }
-    else if (name==nil || [name isEqualToString:@""])
+    if (name==nil || [name isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Error" message: @"Please add a name" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];

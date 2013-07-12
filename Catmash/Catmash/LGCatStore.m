@@ -60,7 +60,11 @@
 	PFObject *onlineCat = [PFObject objectWithClassName:@"Cat"];
 	[onlineCat setObject:cat.catName forKey:@"name"];
 	
-	NSData *imageData = UIImagePNGRepresentation(cat.catImage);
+	NSData *imageData = UIImageJPEGRepresentation(cat.catImage, 1.0f);
+	while (imageData.length > 10000000) {
+		imageData = UIImageJPEGRepresentation(cat.catImage, 0.5f);
+	}
+	
 	PFFile *imageFile = [PFFile fileWithData:imageData];
 	[imageFile save];
 	[onlineCat setObject:imageFile forKey:@"image"];

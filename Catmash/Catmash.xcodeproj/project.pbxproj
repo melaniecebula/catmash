@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8092C077178FAE40002DB2CD /* kitten 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8092C076178FAE40002DB2CD /* kitten 2.jpg */; };
+		8092C079178FAE4A002DB2CD /* kitten 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8092C078178FAE4A002DB2CD /* kitten 1.jpg */; };
+		8092C07F178FAFBF002DB2CD /* LGCatBattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8092C07D178FAFBF002DB2CD /* LGCatBattleViewController.m */; };
+		8092C080178FAFBF002DB2CD /* LGCatBattleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8092C07E178FAFBF002DB2CD /* LGCatBattleViewController.xib */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -21,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8092C076178FAE40002DB2CD /* kitten 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kitten 2.jpg"; sourceTree = "<group>"; };
+		8092C078178FAE4A002DB2CD /* kitten 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kitten 1.jpg"; sourceTree = "<group>"; };
+		8092C07C178FAFBF002DB2CD /* LGCatBattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCatBattleViewController.h; sourceTree = "<group>"; };
+		8092C07D178FAFBF002DB2CD /* LGCatBattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCatBattleViewController.m; sourceTree = "<group>"; };
+		8092C07E178FAFBF002DB2CD /* LGCatBattleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGCatBattleViewController.xib; sourceTree = "<group>"; };
 		8371F45B178FABF900DE10A8 /* Catmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8371F45E178FABF900DE10A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8371F460178FABF900DE10A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +65,9 @@
 		8371F452178FABF800DE10A8 = {
 			isa = PBXGroup;
 			children = (
+				8092C07C178FAFBF002DB2CD /* LGCatBattleViewController.h */,
+				8092C07D178FAFBF002DB2CD /* LGCatBattleViewController.m */,
+				8092C07E178FAFBF002DB2CD /* LGCatBattleViewController.xib */,
 				8371F466178FABF900DE10A8 /* Catmash */,
 				8371F45D178FABF900DE10A8 /* Frameworks */,
 				8371F45C178FABF900DE10A8 /* Products */,
@@ -95,6 +107,8 @@
 		8371F467178FABF900DE10A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8092C078178FAE4A002DB2CD /* kitten 1.jpg */,
+				8092C076178FAE40002DB2CD /* kitten 2.jpg */,
 				8371F468178FABF900DE10A8 /* Catmash-Info.plist */,
 				8371F469178FABF900DE10A8 /* InfoPlist.strings */,
 				8371F46C178FABF900DE10A8 /* main.m */,
@@ -162,6 +176,9 @@
 				8371F473178FABF900DE10A8 /* Default.png in Resources */,
 				8371F475178FABF900DE10A8 /* Default@2x.png in Resources */,
 				8371F477178FABF900DE10A8 /* Default-568h@2x.png in Resources */,
+				8092C077178FAE40002DB2CD /* kitten 2.jpg in Resources */,
+				8092C079178FAE4A002DB2CD /* kitten 1.jpg in Resources */,
+				8092C080178FAFBF002DB2CD /* LGCatBattleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +192,7 @@
 				8371F46D178FABF900DE10A8 /* main.m in Sources */,
 				8371F471178FABF900DE10A8 /* LGAppDelegate.m in Sources */,
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
+				8092C07F178FAFBF002DB2CD /* LGCatBattleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +309,7 @@
 				8371F47F178FABF900DE10A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

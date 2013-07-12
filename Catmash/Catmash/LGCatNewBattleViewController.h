@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LGCatBattleViewController : UIViewController
+@interface LGCatNewBattleViewController : UIViewController
 
 @end

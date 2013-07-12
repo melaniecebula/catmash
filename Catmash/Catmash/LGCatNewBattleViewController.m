@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 TheLGs. All rights reserved.
 //
 
-#import "LGCatBattleViewController.h"
+#import "LGCatNewBattleViewController.h"
 
-@interface LGCatBattleViewController ()
+@interface LGCatNewBattleViewController ()
 
 @end
 
-@implementation LGCatBattleViewController
+@implementation LGCatNewBattleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

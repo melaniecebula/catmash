@@ -12,7 +12,9 @@
 @property double currentScore;
 @property (nonatomic, strong) NSString *catName;
 @property (nonatomic, strong) UIImage *catImage;
+@property double ranking;
 
 - (void)updateCurrentScore:(double)gainedPoints;
 - (double)getExpectScore:(LGCat *)opponent;
+- (double)getLGCatRanking;
 @end

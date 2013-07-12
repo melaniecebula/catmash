@@ -10,8 +10,10 @@
 
 @implementation LGCat
 - (void)updateCurrentScore:(double)gainedPoints{
+    NSLog(@"updating current score.  score was %f", [self currentScore]);
     double newScore = self.currentScore + gainedPoints;
     self.currentScore = newScore;
+    NSLog(@"new score is %f", [self currentScore]);
 }
 - (double)getExpectScore:(LGCat *)opponent{
     double truthDiff = ([opponent currentScore] - [self currentScore]) / 400;

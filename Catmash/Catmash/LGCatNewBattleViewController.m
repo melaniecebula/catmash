@@ -50,7 +50,7 @@
 
 - (IBAction)pickSecondCat:(id)sender {
     [self newCatBattle];
-    [_secondCat updateCurrentScore:2.0];
+    [_secondCat updateCurrentScore:1.0];
     
 }
 

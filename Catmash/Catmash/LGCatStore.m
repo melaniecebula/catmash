@@ -86,7 +86,7 @@
         randomPos2 = arc4random()%([_catStore count]);
     }
     
-    NSLog(@"%d / %d", randomPos1, randomPos2);
+    NSLog(@"random cat pair positions: %d / %d", randomPos1, randomPos2);
     
     NSArray *catPair = @[[_catStore objectAtIndex:randomPos1], [_catStore objectAtIndex:randomPos2]];
     

@@ -13,6 +13,8 @@
 		330FD8D2178FBEE5009BD963 /* LGMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F486178FB40900DE10A8 /* LGMainMenuViewController.m */; };
 		330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */; };
 		330FD8D7178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8D5178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg */; };
+		8066F232178FECE600D7F6B4 /* LGCatNewBattleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066F231178FECE600D7F6B4 /* LGCatNewBattleViewController.xib */; };
+		8066F234178FECFE00D7F6B4 /* LGCatNewBattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8066F233178FECFE00D7F6B4 /* LGCatNewBattleViewController.m */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -48,6 +50,9 @@
 		330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGProfileViewController.m; sourceTree = "<group>"; };
 		330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGProfileViewController.xib; sourceTree = "<group>"; };
 		330FD8D5178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = n2okjor1jda07nespqvtn0d8811373612758.jpg; sourceTree = "<group>"; };
+		8066F231178FECE600D7F6B4 /* LGCatNewBattleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGCatNewBattleViewController.xib; sourceTree = "<group>"; };
+		8066F233178FECFE00D7F6B4 /* LGCatNewBattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCatNewBattleViewController.m; sourceTree = "<group>"; };
+		8066F235178FED0B00D7F6B4 /* LGCatNewBattleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGCatNewBattleViewController.h; sourceTree = "<group>"; };
 		8371F45B178FABF900DE10A8 /* Catmash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catmash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8371F45E178FABF900DE10A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8371F460178FABF900DE10A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,9 +114,6 @@
 		8371F452178FABF800DE10A8 = {
 			isa = PBXGroup;
 			children = (
-				8066F22C178FE88F00D7F6B4 /* LGCatBattleViewController.h */,
-				8066F22D178FE88F00D7F6B4 /* LGCatBattleViewController.m */,
-				8066F22E178FE88F00D7F6B4 /* LGCatBattleViewController.xib */,
 				8371F466178FABF900DE10A8 /* Catmash */,
 				8371F45D178FABF900DE10A8 /* Frameworks */,
 				8371F45C178FABF900DE10A8 /* Products */,
@@ -160,6 +162,9 @@
 				8371F480178FAD7200DE10A8 /* LGWallOfFameViewController.h */,
 				8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */,
 				8371F482178FAD7200DE10A8 /* LGWallOfFameViewController.xib */,
+				8066F235178FED0B00D7F6B4 /* LGCatNewBattleViewController.h */,
+				8066F233178FECFE00D7F6B4 /* LGCatNewBattleViewController.m */,
+				8066F231178FECE600D7F6B4 /* LGCatNewBattleViewController.xib */,
 				8371F467178FABF900DE10A8 /* Supporting Files */,
 				1B6A5C71178FAD6000C83E0B /* LGCat.h */,
 				1B6A5C72178FAD6000C83E0B /* LGCat.m */,
@@ -245,8 +250,8 @@
 				8371F484178FAD7200DE10A8 /* LGWallOfFameViewController.xib in Resources */,
 				8371F489178FB40900DE10A8 /* LGMainMenuViewController.xib in Resources */,
 				330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */,
-				8371F48F178FC4BC00DE10A8 /* LGBattleViewViewController.xib in Resources */,
 				330FD8D7178FE54C009BD963 /* n2okjor1jda07nespqvtn0d8811373612758.jpg in Resources */,
+				8066F232178FECE600D7F6B4 /* LGCatNewBattleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +270,7 @@
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
 				1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */,
 				330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */,
-				8371F4A6178FE58C00DE10A8 /* UIImage+Resizing.m in Sources */,
-				8066F22F178FE88F00D7F6B4 /* LGCatBattleViewController.m in Sources */,
+				8066F234178FECFE00D7F6B4 /* LGCatNewBattleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

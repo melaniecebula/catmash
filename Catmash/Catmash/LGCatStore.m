@@ -41,6 +41,7 @@
 				
 				[_catStore addObject:newCat];
 			}
+			[[NSNotificationCenter defaultCenter] postNotificationName:kLGCatStoreFinishedLoadingCatsNotification object:self];
 		}];
     }
     

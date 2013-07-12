@@ -32,9 +32,21 @@
 	
         
         _cats = [[LGCatStore sharedStore] catStore];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(catStoreFinishedLoadingCats) name:kLGCatStoreFinishedLoadingCatsNotification object:nil];
 		
     }
     return self;
+}
+
+- (void)catStoreFinishedLoadingCats
+{
+	_cats = [[LGCatStore sharedStore] catStore];
+	[_tableView reloadData];
+}
+
+-(void)dealloc
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidLoad
@@ -72,6 +84,7 @@
 	
 	LGCat *cat = _cats[indexPath.row];
 	cell.textLabel.text = cat.catName;
+	cell.imageView.image = cat.catImage;
 	
 	return cell;
 }

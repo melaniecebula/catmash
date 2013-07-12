@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B57F997178FB7A800DCAB7E /* LGCatStore.m */; };
-		1B6A5C73178FAD6000C83E0B /* LGCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6A5C72178FAD6000C83E0B /* LGCat.m */; };
 		330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */; };
 		330FD8D1178FBDB9009BD963 /* LGProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */; };
+		330FD8D2178FBEE5009BD963 /* LGMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F486178FB40900DE10A8 /* LGMainMenuViewController.m */; };
+		330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F481178FAD7200DE10A8 /* LGWallOfFameViewController.m */; };
 		8371F45F178FABF900DE10A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F45E178FABF900DE10A8 /* UIKit.framework */; };
 		8371F461178FABF900DE10A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F460178FABF900DE10A8 /* Foundation.framework */; };
 		8371F463178FABF900DE10A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F462178FABF900DE10A8 /* CoreGraphics.framework */; };
@@ -208,11 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330FD8D3178FBF00009BD963 /* LGWallOfFameViewController.m in Sources */,
+				330FD8D2178FBEE5009BD963 /* LGMainMenuViewController.m in Sources */,
 				8371F48A178FB62800DE10A8 /* LGCat.m in Sources */,
 				8371F46D178FABF900DE10A8 /* main.m in Sources */,
 				8371F471178FABF900DE10A8 /* LGAppDelegate.m in Sources */,
 				8371F47A178FABF900DE10A8 /* Catmash.xcdatamodeld in Sources */,
-				1B6A5C73178FAD6000C83E0B /* LGCat.m in Sources */,
 				1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */,
 				330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */,
 			);

@@ -15,4 +15,5 @@
 @property (nonatomic, strong, readonly) NSArray *catStore;
 +(LGCatStore *)sharedStore;
 -(void)addToCatStore:(LGCat *)cat;
+-(NSArray *)recieveRandomLGCatPair;
 @end

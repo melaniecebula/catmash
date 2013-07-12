@@ -21,4 +21,7 @@
     
     return expectedScore;
 }
+-(double)getLGCatRanking{
+    
+}
 @end

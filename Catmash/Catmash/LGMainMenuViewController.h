@@ -12,4 +12,7 @@
 
 - (IBAction)enterWallOfFame:(id)sender;
 
+- (IBAction)profile:(id)sender;
+
+
 @end

@@ -8,6 +8,7 @@
 
 #import "LGMainMenuViewController.h"
 #import "LGWallOfFameViewController.h"
+#import "LGProfileViewController.h"
 
 @interface LGMainMenuViewController ()
 
@@ -45,5 +46,11 @@
 {
 	LGWallOfFameViewController *wallVC = [LGWallOfFameViewController new];
 	[self.navigationController pushViewController:wallVC animated:YES];
+}
+
+- (IBAction)profile:(id)sender {
+    
+    LGProfileViewController *profileVC = [LGProfileViewController new];
+    [self.navigationController pushViewController:profileVC animated:YES];
 }
 @end

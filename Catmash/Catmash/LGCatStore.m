@@ -13,6 +13,7 @@
 }
 @end
 @implementation LGCatStore
+@synthesize catStore = _catStore;
 +(id)allocWithZone:(NSZone *)zone{
     return [self sharedStore];
 }

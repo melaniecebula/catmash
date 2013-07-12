@@ -1,9 +1,9 @@
 //
 //  LGProfileViewController.m
-//  CatMash
+//  Catmash
 //
 //  Created by Hannia Zia on 7/11/13.
-//  Copyright (c) 2013 THeLGs. All rights reserved.
+//  Copyright (c) 2013 TheLGs. All rights reserved.
 //
 
 #import "LGProfileViewController.h"
@@ -13,6 +13,12 @@
 @end
 
 @implementation LGProfileViewController
+
+
+- (id)init
+{
+    return [self initWithNibName:nil bundle:nil];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,5 +40,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

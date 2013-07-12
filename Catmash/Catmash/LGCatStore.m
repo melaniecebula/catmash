@@ -8,7 +8,6 @@
 
 #import "LGCatStore.h"
 #import <Parse/Parse.h>
-#import "UIImage+Resizing.h"
 
 @interface LGCatStore()
 {

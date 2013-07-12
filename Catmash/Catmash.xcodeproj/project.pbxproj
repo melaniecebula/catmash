@@ -38,7 +38,6 @@
 		8371F49F178FC82500DE10A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F49E178FC82500DE10A8 /* Security.framework */; };
 		8371F4A1178FC82D00DE10A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F4A0178FC82D00DE10A8 /* StoreKit.framework */; };
 		8371F4A3178FC83500DE10A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8371F4A2178FC83500DE10A8 /* SystemConfiguration.framework */; };
-		8371F4A6178FE58C00DE10A8 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8371F4A5178FE58C00DE10A8 /* UIImage+Resizing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,8 +82,6 @@
 		8371F49E178FC82500DE10A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8371F4A0178FC82D00DE10A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8371F4A2178FC83500DE10A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8371F4A4178FE58C00DE10A8 /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
-		8371F4A5178FE58C00DE10A8 /* UIImage+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +167,6 @@
 				1B6A5C72178FAD6000C83E0B /* LGCat.m */,
 				1B57F996178FB7A800DCAB7E /* LGCatStore.h */,
 				1B57F997178FB7A800DCAB7E /* LGCatStore.m */,
-				8371F4A4178FE58C00DE10A8 /* UIImage+Resizing.h */,
-				8371F4A5178FE58C00DE10A8 /* UIImage+Resizing.m */,
 				330FD8CD178FBDB9009BD963 /* LGProfileViewController.h */,
 				330FD8CE178FBDB9009BD963 /* LGProfileViewController.m */,
 				330FD8CF178FBDB9009BD963 /* LGProfileViewController.xib */,
@@ -272,7 +267,6 @@
 				1B57F998178FB7A800DCAB7E /* LGCatStore.m in Sources */,
 				330FD8D0178FBDB9009BD963 /* LGProfileViewController.m in Sources */,
 				8371F48E178FC4BC00DE10A8 /* LGBattleViewViewController.m in Sources */,
-				8371F4A6178FE58C00DE10A8 /* UIImage+Resizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
